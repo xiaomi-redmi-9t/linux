@@ -30,3 +30,11 @@
 		};
 	};
 };
+
+&xo_board {
+	clock-frequency = <19200000>;
+};
+
+&sleep_clk {
+	clock-frequency = <32764>;
+};
