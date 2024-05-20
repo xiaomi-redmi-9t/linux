@@ -47,14 +47,6 @@
 	};
 };
 
-&xo_board {
-	clock-frequency = <19200000>;
-};
-
-&sleep_clk {
-	clock-frequency = <32764>;
-};
-
 &pm6125_gpios {
 	vol_up_n: vol-up-n-state {
 		pins = "gpio5";
@@ -63,4 +55,12 @@
 		bias-pull-up;
 		input-enable;
 	};
+};
+
+&sleep_clk {
+	clock-frequency = <32764>;
+};
+
+&xo_board {
+	clock-frequency = <19200000>;
 };
